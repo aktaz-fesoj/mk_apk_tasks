@@ -29,7 +29,7 @@ def load_shapefile(data_path, width, height):
 
     #iterate through polygons in data, creating QPolygonFs
     for i in range(0,len(data)):
-        polygon = data.get_geometry(0)[i]
+        polygon = data.geometry.iloc[i]
         
         q_polygon = QPolygonF()
         
