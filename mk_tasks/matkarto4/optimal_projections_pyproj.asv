@@ -16,10 +16,10 @@ py.importlib.import_module('mk')
 
 %Projection properties
 %proj_name = 'bonne';
-%proj_name = 'sinu';
+proj_name = 'sinu';
 %proj_name = 'eck5';
 %proj_name = 'wintri';
-proj_name = 'hammer';
+%proj_name = 'hammer';
 R = 1;
 
 %Analyzed territory
@@ -93,8 +93,7 @@ Mmin = 10000000;
 Mmax = 100000000;
 dM = 1000000;
 [C, h] = contour(-XG, YG, Muv, [Mmin:dM:Mmax], 'LineColor', 'r', 'LineWidth', 0.5);
-[C5, h5] = contour(-XG, YG, Muv, [Mmin:dM*5:Mmax], 'LineColor', 'r', 'LineWidth', 1.5);
-clabel(C5, h5, "Color", "r", 'labelspacing',5000, 'BackgroundColor', 'w');
+
 axis off;
 
 hold on
